@@ -56,12 +56,6 @@ app.include_router(repayments_router, prefix="/api/v1")
 app.include_router(admin_router.router, prefix="/api/v1")
 
 
-@app.on_event("startup")
-async def startup_event():
-    """Initialize database on startup"""
-    init_db()
-
-
 @app.get("/")
 async def root():
     """Root endpoint"""
