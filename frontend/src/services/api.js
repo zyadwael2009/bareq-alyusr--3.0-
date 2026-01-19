@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const API_BASE_URL = '/api/v1'
+// Use environment variable or default to production URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://bareeqalyusr.pythonanywhere.com/api/v1'
 
 // Create axios instance
 const api = axios.create({

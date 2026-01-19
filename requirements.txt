@@ -5,6 +5,7 @@ python-multipart==0.0.6
 
 # WSGI adapter for FastAPI (PythonAnywhere)
 a2wsgi==1.10.6
+asgiref==3.8.1
 
 # Flask (for admin dashboard)
 flask==3.0.0
